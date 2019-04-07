@@ -34,26 +34,7 @@ define('KEYPAIR_PASSPHRASE', '');
  */
 function sendEmail($success, $message)
 {
-    $headers = 'Content-type: text/plain' . "\r\n" .
-        'From: admin@'.SITE_DOMAIN;
-
-    $subject = '['.SITE_DOMAIN.'] ';
-    if ($success) {
-        $subject .= 'Deploy success';
-    } else {
-        $subject .= 'Deploy failure';
-        $headers .= "\r\n" .
-            'X-Priority: 1 (Highest)' . "\r\n" .
-            'X-MSMail-Priority: High' . "\r\n" .
-            'Importance: High';
-    }
-
-    return mail(
-        EMAIL_RECIPIENT,
-        $subject,
-        $message,
-        $headers
-    );
+    return true;
 }
 
 try {
