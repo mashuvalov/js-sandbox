@@ -10,9 +10,8 @@ if (!$ssh->login('srv35573', 'z&KGP5a$h#6x')) {
     exit('Login Failed');
 }
 
-echo $ssh->exec('pwd');
-echo "<br>";
-echo $ssh->exec('cd sandbox.shvlv.ru/');
-echo $ssh->exec('pwd');
+echo $ssh->exec('ls');
+echo $ssh->exec('cd sandbox.shvlv.ru');
+echo $ssh->exec('ls');
 //echo $ssh->exec('ls -la');
 ?>
