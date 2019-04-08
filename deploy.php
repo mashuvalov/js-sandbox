@@ -10,7 +10,7 @@ if (!$ssh->login('srv35573', 'z&KGP5a$h#6x')) {
     exit('Login Failed');
 }
 
-//echo $ssh->exec('ls');
+echo $ssh->exec('cd sandbox.shvlv.ru');
 echo $ssh->exec('git pull');
 //echo $ssh->exec('ls');
 //echo $ssh->exec('ls -la');
