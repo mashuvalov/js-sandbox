@@ -1,2 +1,2 @@
 # sandbox
-Песочница
+Песочница JavaScript
