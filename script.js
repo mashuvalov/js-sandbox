@@ -1,1 +1,1 @@
-console.log("Я JavaScript!");
+alert( 2 ** 4 ); // 16 (2 * 2 * 2 * 2)
